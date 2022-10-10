@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Панель навигации в HTML5</title>
+    <style>
+        ul.nav {
+            margin-left: 0px;
+            padding-left: 0px;
+            list-style: none;
+        }
+
+        .nav li {
+            float: left;
+        }
+
+        ul.nav a {
+            display: block;
+            width: 5em;
+            padding: 10px;
+            margin: 0 5px;
+            background-color: #f4f4f4;
+            border: 1px dashed #333;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+        }
+
+        ul.nav a:hover {
+            background-color: #333;
+            color: #f4f4f4;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li><a href="#222">Введение</a></li>
+        <li><a href="#111">Контакты</a></li>
+        <li><a href="#333">Прогресс</a></li>
+    </ul>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя контрольная работа </title>
+    </head>
+    <h1>
+        <p id="222" align=center> Введение </p>
+    </h1>
+    <h2 class="font-bold text-2xl text-gray-700 w-full">Введение</h2>
+    <h4>это божественный проект</h4>
+    <h2 class="font-bold text-2xl text-gray-700 w-full">На чем основывается проект:</h2>
+    <h4>проект имеет цель направить молодеж на улучшение эко-системы москвы </h4>
+    <h2>
+        <p align=center>Для чего это нужно</p>
+    </h2>
+    <li>
+        <h3>
+            <font color=green>Помогать людям
+        </h3>
+        </font>
+    </li>
+    <li>
+        <h3>
+            <font color=green>Улучшать окружающую среду
+        </h3>
+        </font>
+    </li>
+    <li>
+        <h3>
+            <font color=green>Так же быть комфортным для проживания
+        </h3>
+        </font>
+    </li>
+    <h2 id="333" class="font-bold text-2xl text-gray-700 w-full">Как это делать?</h2>
+    <h4>Первым делом нужно задействовать СМИ и распространить информацию о серии мероприятий, которые будут проводиться
+        для
+        воплощения цели проекта</h4>
+    <style>
+        table {
+            width: 70%;
+            /* Ширина таблицы */
+            background: rgb(71, 255, 34);
+            /* Цвет фона таблицы */
+            color: rgb(2, 2, 2);
+            /* Цвет текста */
+            border-spacing: 1px;
+            /* Расстояние между ячейками */
+        }
+
+        td,
+        th {
+            background: rgb(0, 128, 90);
+            /* Цвет фона ячеек */
+            padding: 5px;
+            /* Поля вокруг текста */
+        }
+    </style>
+    </head>
+
+    <body>
+        <table>
+            <tr>
+                <th>начало</th>
+                <th>на данный момент</th>
+            </tr>
+            <tr>
+                <td>Идея сайта</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>Стили и цитаты</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Цвета проекта</td>
+                <td>70%</td>
+            </tr>
+            <tr>
+                <td>Стили</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>Цитаты</td>
+                <td>40%</td>
+            </tr>
+            <tr>
+                <td>В общем</td>
+                <td>30-55%</td>
+            </tr>
+
+        </table>
+
+        <h2>Контакты</h2>
+        <section id="111">
+
+
+            <form>
+
+                <form method="post" action="#">
+
+                    <input type="text" placeholder="Имя">
+
+                    <input type="text" placeholder="Email">
+
+                    <button type="submit" title="Submit">Отправить <i></i></button>
+
+                </form>
+        </section>
+        </div>
+
+
+
+
+
+        <form class="flex flex-col shadow divide-y divide-gray-300 rounded-xl w-full lg:w-96">
+            <input required="" placeholder="Имя" name="name" type="text" class="rounded-t-xl bg-gray-200 py-2 px-3">
+            <div class="grid grid-cols-2 divide-x divide-gray-300">
+                <div class="py-2 px-3 bg-gray-200">
+                    <input checked="" onclick="$('#email').removeClass('hidden');$('#phone').addClass('hidden')"
+                        type="radio" id="contactr1" name="contacttype" value="email">
+                    <label for="contactr1">Почта</label>
+                </div>
+                <div class="py-2 px-3 bg-gray-200">
+                    <input onclick="$('#email').addClass('hidden');$('#phone').removeClass('hidden')" type="radio"
+                        id="contactr2" name="contacttype" value="phone">
+                    <label for="contactr2">Телефон</label>
+                </div>
+            </div>
+            <input placeholder="Почта" id="email" name="email" type="email" class="bg-gray-200 py-2 px-3">
+            <input placeholder="Телефон" id="phone" name="phone" type="number" class="bg-gray-200 py-2 px-3 hidden">
+            <input placeholder="Возраст" id="age" name="age" type="number" class="bg-gray-200 py-2 px-3">
+            <select name="sex" class="bg-gray-200 py-2 px-3">
+                <option selected="" disabled="">Выберите пол</option>
+                <option>Мужской</option>
+                <option>Женский</option>
+                <option>оно</option>
+
+
+            </select>
+            <textarea required="" placeholder="О себе" name="message" type="text"
+                class="bg-gray-200 py-2 px-3 max-h-32"></textarea>
+            <div class="grid grid-cols-2 divide-x divide-gray-300 rounded-b-xl overflow-hidden">
+                <button type="reset"
+                    class="py-2 px-3 bg-gray-200 hover:bg-gray-400 focus:bg-gray-300 duration-300">Отменить</button>
+                <button type="submit"
+                    class="py-2 px-3 bg-gray-200 hover:bg-gray-400 focus:bg-gray-300 duration-300">Отправить</button>
+            </div>
+        </form>
+
+</html>
+</body>
